@@ -1,0 +1,171 @@
+{
+   "attribute" : [],
+   "hosttemplate" : [
+      {
+         "description" : "Monitors the value of Bitcoin in different currencies",
+         "has_icon" : "0",
+         "managementurls" : [],
+         "name" : "Cryptocurrency - Bitcoin",
+         "servicechecks" : [
+            {
+               "event_handler" : null,
+               "exception" : null,
+               "name" : "Bitcoin - GBP",
+               "timed_exception" : null
+            },
+            {
+               "event_handler" : null,
+               "exception" : null,
+               "name" : "Bitcoin - USD",
+               "timed_exception" : null
+            },
+            {
+               "event_handler" : null,
+               "exception" : null,
+               "name" : "Bitcoin - All",
+               "timed_exception" : null
+            }
+         ]
+      }
+   ],
+   "keyword" : [],
+   "servicecheck" : [
+      {
+         "alert_from_failure" : "1",
+         "args" : "-m GBP",
+         "attribute" : null,
+         "calculate_rate" : null,
+         "cascaded_from" : null,
+         "check_attempts" : "3",
+         "check_freshness" : "1",
+         "check_interval" : "300",
+         "checktype" : {
+            "name" : "Active Plugin"
+         },
+         "critical_comparison" : null,
+         "critical_value" : null,
+         "dependencies" : [],
+         "description" : "",
+         "event_handler" : "",
+         "event_handler_always_exec" : "0",
+         "flap_detection_enabled" : "1",
+         "invertresults" : "0",
+         "keywords" : [],
+         "label" : null,
+         "level" : 0,
+         "markdown_filter" : "0",
+         "name" : "Bitcoin - GBP",
+         "notification_options" : "w,c,r,u,f",
+         "oid" : null,
+         "plugin" : {
+            "name" : "check_bitcoin_price.py"
+         },
+         "retry_check_interval" : "60",
+         "sensitive_arguments" : "1",
+         "servicegroup" : {
+            "name" : "Cryptocurrency - Bitcoin"
+         },
+         "snmptraprules" : [],
+         "stale_state" : "3",
+         "stale_text" : "UNKNOWN: Service results are stale",
+         "stale_threshold_seconds" : "1800",
+         "stalking" : "",
+         "volatile" : "0",
+         "warning_comparison" : null,
+         "warning_value" : null
+      },
+      {
+         "alert_from_failure" : "1",
+         "args" : "-m USD",
+         "attribute" : null,
+         "calculate_rate" : null,
+         "cascaded_from" : null,
+         "check_attempts" : "3",
+         "check_freshness" : "1",
+         "check_interval" : "300",
+         "checktype" : {
+            "name" : "Active Plugin"
+         },
+         "critical_comparison" : null,
+         "critical_value" : null,
+         "dependencies" : [],
+         "description" : "",
+         "event_handler" : "",
+         "event_handler_always_exec" : "0",
+         "flap_detection_enabled" : "1",
+         "invertresults" : "0",
+         "keywords" : [],
+         "label" : null,
+         "level" : 0,
+         "markdown_filter" : "0",
+         "name" : "Bitcoin - USD",
+         "notification_options" : "w,c,r,u,f",
+         "oid" : null,
+         "plugin" : {
+            "name" : "check_bitcoin_price.py"
+         },
+         "retry_check_interval" : "60",
+         "sensitive_arguments" : "1",
+         "servicegroup" : {
+            "name" : "Cryptocurrency - Bitcoin"
+         },
+         "snmptraprules" : [],
+         "stale_state" : "3",
+         "stale_text" : "UNKNOWN: Service results are stale",
+         "stale_threshold_seconds" : "1800",
+         "stalking" : "",
+         "volatile" : "0",
+         "warning_comparison" : null,
+         "warning_value" : null
+      },
+      {
+         "alert_from_failure" : "1",
+         "args" : "-m All",
+         "attribute" : null,
+         "calculate_rate" : null,
+         "cascaded_from" : null,
+         "check_attempts" : "3",
+         "check_freshness" : "1",
+         "check_interval" : "300",
+         "checktype" : {
+            "name" : "Active Plugin"
+         },
+         "critical_comparison" : null,
+         "critical_value" : null,
+         "dependencies" : [],
+         "description" : "",
+         "event_handler" : "",
+         "event_handler_always_exec" : "0",
+         "flap_detection_enabled" : "1",
+         "invertresults" : "0",
+         "keywords" : [],
+         "label" : null,
+         "level" : 0,
+         "markdown_filter" : "0",
+         "name" : "Bitcoin - All",
+         "notification_options" : "w,c,r,u,f",
+         "oid" : null,
+         "plugin" : {
+            "name" : "check_bitcoin_price.py"
+         },
+         "retry_check_interval" : "60",
+         "sensitive_arguments" : "1",
+         "servicegroup" : {
+            "name" : "Cryptocurrency - Bitcoin"
+         },
+         "snmptraprules" : [],
+         "stale_state" : "3",
+         "stale_text" : "UNKNOWN: Service results are stale",
+         "stale_threshold_seconds" : "1800",
+         "stalking" : "",
+         "volatile" : "0",
+         "warning_comparison" : null,
+         "warning_value" : null
+      }
+   ],
+   "servicegroup" : [
+      {
+         "name" : "Cryptocurrency - Bitcoin"
+      }
+   ]
+}

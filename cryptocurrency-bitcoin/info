@@ -1,0 +1,5 @@
+NAME=com.gbedenko.opspack.cryptocurrency_bitcoin
+VERSION=1.0
+ALIAS=Cryptocurrency - Bitcoin
+DEPENDENCIES=
+OPSVIEW_MIN_VERSION=
